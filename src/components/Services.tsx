@@ -51,7 +51,8 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative group bg-zinc-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-purple-500 rounded-lg transition-all hover:bg-zinc-700"
+              style={{ borderRadius: '15px' }}
+              className="relative group bg-zinc-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-purple-500 transition-all hover:bg-zinc-700"
             >
               <div>
                 <span className="rounded-lg inline-flex p-3 bg-purple-500 text-white ring-4 ring-zinc-800">
