@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Code2, Cloud, Lock, Database, Terminal } from 'lucide-react';
+import { Shield, Code2, Lock, Database, Terminal, Server } from 'lucide-react';
 
 const services = [
   {
@@ -13,9 +13,9 @@ const services = [
     icon: Code2,
   },
   {
-    title: 'Cloud Solutions',
-    description: 'Scalable and secure cloud infrastructure design and implementation.',
-    icon: Cloud,
+    title: 'API Development',
+    description: 'Robust and secure API design and implementation.',
+    icon: Server,
   },
   {
     title: 'Penetration Testing',
@@ -31,12 +31,13 @@ const services = [
     title: 'DevSecOps',
     description: 'Integration of security practices within your development lifecycle.',
     icon: Terminal,
+    
   },
 ];
 
 export function Services() {
   return (
-    <div id="services" className="bg-zinc-900 py-24">
+    <div id="services" className="  py-24" style={{ backgroundColor: '240 10% 3.9%' }}> 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
@@ -51,11 +52,20 @@ export function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              style={{ borderRadius: '15px' }}
-              className="relative group bg-zinc-800 p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-purple-500 transition-all hover:bg-zinc-700"
+              style={{
+                borderRadius: '15px',
+                // boxShadow: '3',
+                // backgroundColor: '#000000',
+                // borderColor: '#e5e7eb',
+                border: '2px solid #27272A',
+              }}
+              
+              className="relative group bg-black p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-purple-500 transition-all hover:bg-gray-800"
+              
             >
               <div>
-                <span className="rounded-lg inline-flex p-3 bg-purple-500 text-white ring-4 ring-zinc-800">
+                <span className="rounded-lg inline-flex p-3 bg-black text-white ring-1 ring-zinc-700 ">
+                  
                   <service.icon className="h-6 w-6" aria-hidden="true" />
                 </span>
               </div>
